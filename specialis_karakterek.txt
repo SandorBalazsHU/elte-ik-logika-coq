@@ -1,0 +1,26 @@
+Speciális karakterek:
+
+Windows: https://github.com/clarkgrubb/latex-input
+         -- letölt latex.exe;
+		 -- elindít (jobb alul lesz egy pici zöld négyzetben egy H)
+		 -- Ctrl+Alt+L
+		 –- mehet a Latex írás
+		 
+Ubuntu: https://github.com/coq/coq/wiki/CoqIde-configuration-to-input-special-characters
+        –- sudo apt-get install ibus-table-latex
+        -- Region & Language
+		–- Input Source alatt "+"
+		–- "..."
+		-- "Other"
+		–- "Other (LATeX)"
+
+Műveletek: ∧ ∨ ⊃ ¬
+  - konjunkció  - "\wedge"
+  - diszjunkció - "\vee"
+  - implikáció  - "\supset"
+  - negáció     - "\neg"
+
+Ha valaki akar elsőrenddel próbálkozni:
+kvantorok: ∀ ∃
+  - univerzális     - "\forall"
+  - egzisztenciális - "\exists"
