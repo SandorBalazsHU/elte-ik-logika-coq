@@ -100,6 +100,9 @@ Proof.
   apply @arrow_impl with (X := A) (Y:= B).
   rewrite <- addNilInSeq_R.
   apply @arrow_switch with (X := B) (Y:= ¬A ∨ ¬B).
+  apply @arrow_disj with (X:= ¬A) (Y := ¬B).
+  rewrite <- addNilInSeq_R.
+  apply @arrow_switch with (X:= ¬A) (Y:= ¬B).
 
 Example example4 {A B C} :
   [(A ∨ B) ⊃ C] ---> [(A ⊃ C) ∧ (B ⊃ C)].
