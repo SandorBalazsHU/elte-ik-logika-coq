@@ -103,6 +103,11 @@ Proof.
   apply @arrow_disj with (X:= ¬A) (Y := ¬B).
   rewrite <- addNilInSeq_R.
   apply @arrow_switch with (X:= ¬A) (Y:= ¬B).
+  apply @arrow_neg with (X:= B).
+  rewrite <- addNilInSeq_L.
+  apply @leave_everything with (X := B).
+  apply @axioma.
+Qed.
 
 Example example4 {A B C} :
   [(A ∨ B) ⊃ C] ---> [(A ⊃ C) ∧ (B ⊃ C)].
